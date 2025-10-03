@@ -1,0 +1,46 @@
+/* Solo-Leveling HUD — TK v1 (Black+Purple, Teal+Magenta accents) */
+:root{
+  --ink:#ECEDFF; --muted:#aab0e3;
+  --void-1:#0b061a; --void-2:#100a2e; --void-3:#151736; --void-4:#1d204a;
+  --teal:#21e0c2; --magenta:#ff3ea5;
+  --info:#64d1ff; --success:#20bd39; --warning:#ffd36a; --danger:#ff6b86;
+}
+/* SN stylekit mapping */
+:root,.sn-root{
+  --sn-stylekit-foreground-color:var(--ink);
+  --sn-stylekit-background-color:var(--void-1);
+  --sn-stylekit-contrast-background-color:var(--void-2);
+  --sn-stylekit-border-color:rgba(236,237,255,.12);
+  --sn-stylekit-shadow-color:rgba(0,0,0,.4);
+  --sn-stylekit-secondary-foreground-color:var(--muted);
+  --sn-stylekit-paragraph-text-color:var(--ink);
+  --sn-stylekit-editor-background-color:var(--void-2);
+  --sn-stylekit-info-color:var(--info);
+  --sn-stylekit-success-color:var(--success);
+  --sn-stylekit-warning-color:var(--warning);
+  --sn-stylekit-danger-color:var(--danger);
+  --sn-stylekit-contrast-foreground-color:var(--ink);
+  --sn-stylekit-contrast-border-color:rgba(236,237,255,.16);
+  --sn-desktop-titlebar-bg-color:var(--void-3);
+}
+/* Surfaces */
+html,body,.sn-root{background:var(--void-1)!important;color:var(--ink)!important;}
+#title-bar,.sn-title-bar,.global-menu-bar,.window-controls{background:var(--void-3)!important;color:var(--ink)!important;}
+.sidebar,.items-column,.navigation-panel,.notes-panel,.editor-pane,.split,.split-view{background:var(--void-2)!important;}
+.items-column .list-item:hover,.items-column .list-item.selected{background:#251332!important;border-left:3px solid var(--magenta)!important;}
+.editor{background:var(--void-2)!important;color:var(--ink)!important;border:1px solid rgba(236,237,255,.08)!important;}
+.editor .ck,.CodeMirror,.cm-editor,textarea,input,select{background:var(--void-3)!important;color:var(--ink)!important;border:1px solid rgba(236,237,255,.12)!important;}
+.editor a,.link,.tag{color:var(--teal)!important;}
+.btn,.Button,.sk-button{background:linear-gradient(90deg,var(--magenta),var(--teal))!important;color:#0c0b16!important;border:none!important;}
+.btn:hover,.Button:hover,.sk-button:hover{filter:brightness(1.08);}
+.toolbar,.menu-bar,.dropdown,.context-menu,.dropdown-menu{background:var(--void-3)!important;color:var(--ink)!important;border:1px solid rgba(236,237,255,.12)!important;box-shadow:0 8px 18px var(--sn-stylekit-shadow-color)!important;}
+/* Sheets */
+.app-root .handsontable,.spreadsheet,.grid,.hot-container{--ht-border-color:rgba(236,237,255,.08);background:var(--void-2)!important;color:var(--ink)!important;}
+.handsontable .ht_master .wtHolder,.handsontable .htCore{background:var(--void-2)!important;}
+.handsontable td,.handsontable th{background:var(--void-2)!important;border-color:var(--ht-border-color)!important;}
+.handsontable tr.current,.handsontable td.current{background:#1f1a3d!important;border-color:var(--magenta)!important;}
+/* Scrollbar */
+::-webkit-scrollbar{width:10px;} ::-webkit-scrollbar-thumb{background:#484987;border-radius:8px;}
+/* Accents */
+.badge,.tag-pill,.label{background:#2a073a!important;border:1px solid var(--magenta)!important;color:var(--ink)!important;}
+hr{border-color:rgba(236,237,255,.12)!important;}

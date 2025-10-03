@@ -1,0 +1,27 @@
+{
+  "name": "Solo-Leveling HUD — TK (Theme Pack)",
+  "packages": [
+    {
+      "identifier": "com.starlighter.shud.blackpurple.v1",
+      "name": "Solo-Leveling HUD — TK (Black+Purple)",
+      "content_type": "SN|Theme",
+      "area": "themes",
+      "version": "1.0.0",
+      "url": "https://starlightertheory.github.io/sn-level-up-HUD/bp-dark.css",
+      "download_url": "https://starlightertheory.github.io/sn-level-up-HUD/bp-dark.css",
+      "latest_url": "https://starlightertheory.github.io/sn-level-up-HUD/ext.json",
+      "publisher": "StarlighterTheory"
+    },
+    {
+      "identifier": "com.starlighter.shud.tealmagenta.v1",
+      "name": "Solo-Leveling HUD — TK (Teal+Magenta Light)",
+      "content_type": "SN|Theme",
+      "area": "themes",
+      "version": "1.0.0",
+      "url": "https://starlightertheory.github.io/sn-level-up-HUD/bp-light.css",
+      "download_url": "https://starlightertheory.github.io/sn-level-up-HUD/bp-light.css",
+      "latest_url": "https://starlightertheory.github.io/sn-level-up-HUD/ext.json",
+      "publisher": "StarlighterTheory"
+    }
+  ]
+}

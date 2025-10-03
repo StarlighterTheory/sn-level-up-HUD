@@ -1,0 +1,41 @@
+/* Solo-Leveling HUD — TK v1 (Teal+Magenta Light, Black+Purple accents) */
+:root{
+  --ink:#151736;
+  --paper:#F7F9FF; --panel:#EDF2FF; --line:#D7DEF5;
+  --teal:#12c7af; --magenta:#e43fa1;
+  --deep-purple:#1b1033; --near-black:#0b061a;
+  --info:#157dff; --success:#20a34a; --warning:#c98f00; --danger:#d94a60;
+}
+/* SN stylekit mapping */
+:root,.sn-root{
+  --sn-stylekit-foreground-color:var(--ink);
+  --sn-stylekit-background-color:var(--paper);
+  --sn-stylekit-contrast-background-color:var(--panel);
+  --sn-stylekit-border-color:var(--line);
+  --sn-stylekit-secondary-foreground-color:#4a4f7a;
+  --sn-stylekit-paragraph-text-color:var(--ink);
+  --sn-stylekit-editor-background-color:var(--panel);
+  --sn-stylekit-info-color:var(--info);
+  --sn-stylekit-success-color:var(--success);
+  --sn-stylekit-warning-color:var(--warning);
+  --sn-stylekit-danger-color:var(--danger);
+  --sn-desktop-titlebar-bg-color:var(--panel);
+}
+/* Surfaces */
+html,body,.sn-root{background:var(--paper)!important;color:var(--ink)!important;}
+#title-bar,.sn-title-bar,.global-menu-bar,.window-controls{background:var(--panel)!important;}
+.sidebar,.items-column,.navigation-panel,.notes-panel,.editor-pane,.split,.split-view{background:var(--panel)!important;border-right:1px solid var(--line)!important;}
+.items-column .list-item:hover,.items-column .list-item.selected{background:#e8f9f6!important;border-left:3px solid var(--teal)!important;}
+.editor,.ck,.CodeMirror,.cm-editor,textarea,input,select{background:#fff!important;color:var(--ink)!important;border:1px solid var(--line)!important;}
+.editor a,.link,.tag{color:var(--magenta)!important;}
+.btn,.Button,.sk-button{background:linear-gradient(90deg,var(--teal),var(--magenta))!important;color:#fff!important;border:none!important;}
+.btn:hover,.Button:hover,.sk-button:hover{filter:saturate(1.05) brightness(.98);}
+/* Sheets */
+.app-root .handsontable,.spreadsheet,.grid,.hot-container{--ht-border-color:var(--line);background:#fff!important;color:var(--ink)!important;border-color:var(--line)!important;}
+.handsontable td,.handsontable th{border-color:var(--ht-border-color)!important;}
+.handsontable tr.current,.handsontable td.current{background:#f4e9fb!important;border-color:var(--magenta)!important;}
+/* Scrollbar */
+::-webkit-scrollbar{width:10px;} ::-webkit-scrollbar-thumb{background:#cfd6ed;border-radius:8px;}
+/* Accents */
+.badge,.tag-pill,.label{background:#e9f8f5!important;border:1px solid var(--teal)!important;color:var(--deep-purple)!important;}
+hr{border-color:var(--line)!important;}
